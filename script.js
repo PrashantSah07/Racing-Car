@@ -47,3 +47,35 @@ leftCtrlBtn.addEventListener("click", function () {
     };
     car.style.animation = "none"
 });
+
+
+
+
+
+
+let ison2 = false;
+
+let border = document.querySelector('.night-mode');
+let nightMode = document.querySelector('.slide');
+let container = document.querySelector('.container');
+
+nightMode.addEventListener('click', function () {
+    if (ison2) {
+        border.style.borderColor = 'black';
+        nightMode.style.borderColor = "black";
+        nightMode.classList.toggle('move');
+        container.classList.toggle('day');
+        container.classList.toggle('night');
+    }
+    else {
+        border.style.borderColor = 'white';
+        nightMode.style.borderColor = "white";
+        nightMode.classList.toggle('move');
+        container.classList.toggle('day');
+        container.classList.toggle('night');
+    }
+    ison2 = !ison2;
+
+})
+
+console.log(container)

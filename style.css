@@ -4,15 +4,52 @@
     box-sizing: border-box;
 }
 
+.night-mode {
+    border: 2px solid black;
+    width: 52px;
+    height: 27px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    z-index: 1;
+}
+
+.slide {
+    transition: 0.2s;
+}
+
+.move {
+    transform: translateX(100%);
+}
+
+.night-mode p {
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
 .container {
     height: 100vh;
     width: 100vw;
-    background-image: url(bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
     position: relative;
+}
+
+.day {
+    background-image: url(bg-img.jpg);
+}
+
+.night {
+    background-image: url(bg-img2.jpg);
 }
 
 .container .flex {
@@ -157,6 +194,10 @@
 }
 
 @media only screen and (max-width:800px) {
+    .day {
+        background-position: left;
+    }
+
     .container .car {
         bottom: -40px;
     }
@@ -176,10 +217,6 @@
 
     .right-wheel {
         left: 240px;
-    }
-
-    .container {
-        background-position: left;
     }
 
     .car svg {
