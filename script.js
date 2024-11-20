@@ -3,7 +3,6 @@ let leftCtrlBtn = document.querySelector('.left-ctrl');
 let roadSlider = document.querySelectorAll('.one-line-road');
 let wheelRotate = document.querySelectorAll('.wheel');
 let car = document.querySelector('.box');
-console.log(car)
 
 
 let isOn = false;
@@ -77,5 +76,3 @@ nightMode.addEventListener('click', function () {
     ison2 = !ison2;
 
 })
-
-console.log(container)

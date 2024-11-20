@@ -118,6 +118,10 @@
     color: white;
 }
 
+.car div:nth-child(2) p:active {
+    background-color: rgb(255, 0, 0);
+}
+
 .lambo {
     width: 500px;
 }
